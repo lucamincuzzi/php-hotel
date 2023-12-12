@@ -68,17 +68,17 @@ $hotels = [
                     <th scope="col">Distanza dal centro</th>
                 </tr>
             </thead>
-            <?php foreach ($hotels as $key => $hotel) { ?>
-                <tbody>
+            <tbody>
+                <?php foreach ($hotels as $key => $hotel) { ?>
                     <tr>
-                        <td "><?php echo $hotel['name'] ?></td>
-                        <td "><?php echo $hotel['description'] ?></td>
-                        <td "><?php echo $hotel['parking'] ? '<span class="yes">Sì</span>' : '<span class="no">Non disponibile</span>' ?></td>
-                        <td "><?php echo $hotel['vote'] ?></td>
-                        <td "><?php echo $hotel['distance_to_center'] ?></td>
+                        <td><?php echo $hotel['name'] ?></td>
+                        <td><?php echo $hotel['description'] ?></td>
+                        <td><?php echo $hotel['parking'] ? '<span class="yes">Sì</span>' : '<span class="no">Non disponibile</span>' ?></td>
+                        <td><?php echo $hotel['vote'] ?></td>
+                        <td><?php echo $hotel['distance_to_center'] ?></td>
                     </tr>
+                <?php } ?>
                 </tbody>
-            <?php } ?>
         </table>
     </div>
 </body>
